@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#app {
+  width: 100%;
+  font-weight: normal;
+  font-family: jost, sans-serif !important;
+}
+
+a,
+.green {
+  text-decoration: none;
+  transition: 0.4s;
+}
+button, input, select, textarea {
+  font-family: jost, sans-serif !important;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: .5;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+.inner_loder{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
